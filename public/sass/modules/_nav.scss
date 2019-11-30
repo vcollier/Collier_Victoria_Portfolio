@@ -1,0 +1,68 @@
+.toggleNav {
+  right: 0;
+  float: right;
+  width: 25px;
+  padding: 0px 50px 0px 0px;
+}
+
+
+#menuButton{
+  width: 25px;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+#toggleList {
+  display: none;
+  right: 0;
+  padding: 45px 0px 0px 0px;  
+}
+
+#toggleList li {
+  padding: 10px 50px 10px 50px;
+}
+
+#toggleList li:hover {
+  padding: 10px 50px 10px 50px;
+}
+
+#toggleList a{
+  text-decoration: none;
+  color: white;
+}
+
+#toggleList.active {
+  display: block;
+  font-size: 30px;
+  margin-right: 0px;
+  color: black;
+  background-color:gray;
+  width: 100%;
+}
+
+#mainHeader {
+  height: 300px;
+}
+
+#logoCon {
+  margin-left: 10px;
+}
+
+#logoCon img {
+  width: 300px;
+}
+
+#mainNav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  background: url("../../../images/burger.svg") center no-repeat;
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}

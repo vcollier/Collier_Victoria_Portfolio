@@ -1,0 +1,80 @@
+
+#beer1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background: rgba($color: #aaaaaa, $alpha: 0.5);
+    h2{
+        font-size: 25px;
+    }
+    div{
+        margin: 0 auto;
+        margin-top: 30px;
+
+        p{
+            color: #aaaaaa;
+            letter-spacing: 2px;
+            padding-top: 80px;
+        }
+
+        h2{
+            font-size: 25px;
+            padding: 15px;
+        }
+
+        a{
+            border: 1px solid;
+            width: 100px;
+            padding: 5px;
+            display: flex;
+            margin: 0 auto;
+        }
+        a:hover{
+            background: white;
+            color: #41797B;
+        }
+
+    }
+
+
+    #teched{
+        background: url('../../../images/tech-vid.png');
+      }
+      
+      #climatevid{
+        background: url('../../../images/climate-vid.png');
+      }
+      
+      #winead{
+        background: url('../../../images/ad-wine.png');
+      }
+      
+      #climateinfo{
+        background: url('../../../images/climate-info.png');
+      }
+      
+      #cricketinfo{
+        background: url('../../../images/cricket-info.png');
+      }
+      
+      #laurabrand{
+        background: url('../../../images/laura-brand.png');
+      }
+      
+      #england{
+        background: url('../../../images/series-pic.png');
+      }
+      
+      #drivencell{
+        background: url('../../../images/logo-organ.png');
+      }
+
+      .see-more{
+        width: 300px;
+        height: 300px;
+    }
+
+    .graphic{
+        width: 30%;
+    }
+}

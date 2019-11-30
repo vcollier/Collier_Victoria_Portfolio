@@ -1,0 +1,333 @@
+#mainHeader {
+  /*background: $header-image;*/
+  height: 300px;
+}
+
+#logoCon {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#logoCon img {
+  width: 300px;
+}
+
+#hero h2 {
+  font-size: 40px;
+  margin-top: -100px;
+  padding-bottom: 50px;
+}
+
+.toggleNav {
+  right: 0;
+  float: right;
+  width: 25px;
+  padding: 0px 50px 0px 0px;
+}
+
+#menuButton {
+  width: 25px;
+  border: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+}
+
+#toggleList {
+  display: none;
+  right: 0;
+  padding: 45px 0px 0px 0px;
+}
+
+#toggleList li {
+  padding: 10px 50px 10px 50px;
+}
+
+#toggleList li:hover {
+  padding: 10px 50px 10px 50px;
+}
+
+#toggleList a {
+  text-decoration: none;
+  color: white;
+}
+
+#toggleList.active {
+  display: block;
+  font-size: 30px;
+  margin-right: 0px;
+  color: black;
+  background-color: gray;
+  width: 100%;
+}
+
+#mainHeader {
+  height: 300px;
+}
+
+#logoCon {
+  margin-left: 10px;
+}
+
+#logoCon img {
+  width: 300px;
+}
+
+#mainNav button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  background: url("../../../images/burger.svg") center no-repeat;
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+#inspiration {
+  margin-top: 20px;
+  background: #242323;
+}
+
+#inspiration h2 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+#inspiration p {
+  color: #aaaaaa;
+  font-size: 15px;
+  padding: 10px 45px 20px 45px;
+}
+
+#experience {
+  background: rgba(170, 170, 170, 0.5);
+}
+
+#experience h2 {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+#experience div {
+  width: 50px;
+  height: 50px;
+  margin: 20px 20px 20px 20px;
+}
+
+#icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#software1 {
+  background: url("../../../images/photoshop.svg") no-repeat;
+}
+
+#software2 {
+  background: url("../../../images/illustrator.svg") no-repeat;
+}
+
+#software3 {
+  background: url("../../../images/after-effects.svg") no-repeat;
+}
+
+#software4 {
+  background: url("../../../images/premier.svg") no-repeat;
+}
+
+#software5 {
+  background: url("../../../images/indesign.svg") no-repeat;
+}
+
+#beer1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  background: rgba(170, 170, 170, 0.5);
+}
+
+#beer1 h2 {
+  font-size: 25px;
+}
+
+#beer1 div {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#beer1 div p {
+  color: #aaaaaa;
+  letter-spacing: 2px;
+  padding-top: 80px;
+}
+
+#beer1 div h2 {
+  font-size: 25px;
+  padding: 15px;
+}
+
+#beer1 div a {
+  border: 1px solid;
+  width: 100px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#beer1 div a:hover {
+  background: white;
+  color: #41797B;
+}
+
+#beer1 #teched {
+  background: url("../../../images/tech-vid.png");
+}
+
+#beer1 #climatevid {
+  background: url("../../../images/climate-vid.png");
+}
+
+#beer1 #winead {
+  background: url("../../../images/ad-wine.png");
+}
+
+#beer1 #climateinfo {
+  background: url("../../../images/climate-info.png");
+}
+
+#beer1 #cricketinfo {
+  background: url("../../../images/cricket-info.png");
+}
+
+#beer1 #laurabrand {
+  background: url("../../../images/laura-brand.png");
+}
+
+#beer1 #england {
+  background: url("../../../images/series-pic.png");
+}
+
+#beer1 #drivencell {
+  background: url("../../../images/logo-organ.png");
+}
+
+#beer1 .see-more {
+  width: 300px;
+  height: 300px;
+}
+
+#beer1 .graphic {
+  width: 30%;
+}
+
+#about {
+  background: rgba(170, 170, 170, 0.5);
+  padding-top: 30px;
+}
+
+#about h2 {
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#about p {
+  padding: 0 30px 0 30px;
+}
+
+#mainFooter {
+  background: #242323;
+}
+
+#mainFooter #footerNav ul {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+#mainFooter #footerNav ul li {
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#mainFooter #footerLogo {
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+#mainFooter #footerLogo img {
+  width: 300px;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  background: #c6d6dd;
+  width: 300px;
+  margin-top: -200px;
+}
+
+.popover .see-more {
+  width: 300px;
+  height: 300px;
+}
+
+.popover .graphic {
+  width: 30%;
+}
+
+.popover h5 {
+  color: #aaaaaa;
+}
+
+.popover h4 {
+  font-size: 20px;
+}
+
+.popover .desc {
+  color: white;
+}
+
+.show-popover {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background: url("../../../images/bg-desk.png") fixed no-repeat;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-family: Avenir, Arial, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

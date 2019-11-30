@@ -1,0 +1,25 @@
+#mainFooter{
+    background: $alternate-bg;
+
+    #footerNav{
+        ul{
+            padding-top: 20px;
+            padding-bottom: 50px;
+
+            li{
+                margin-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+    }
+
+    #footerLogo{
+        padding-top:50px;
+        padding-left: 10px;
+        img{
+        width: 300px;
+        }
+    }
+}

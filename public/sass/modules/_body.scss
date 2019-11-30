@@ -1,0 +1,59 @@
+#inspiration{
+    margin-top: 20px;
+    background: $alternate-bg;
+
+    h2{
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    p{
+        color: $alternate-text;
+        font-size: 15px;
+        padding: 10px 45px 20px 45px;
+
+    }
+}
+
+#experience{
+    background: rgba($color: #aaaaaa, $alpha: 0.5);
+
+    h2{
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+
+        div{
+            width: 50px;
+            height: 50px;
+            margin: 20px 20px 20px 20px;
+
+        }
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#software1{
+    background: url('../../../images/photoshop.svg') no-repeat;
+}
+
+#software2{
+    background: url('../../../images/illustrator.svg') no-repeat;
+}
+
+#software3{
+    background: url('../../../images/after-effects.svg') no-repeat;
+}
+
+#software4{
+    background: url('../../../images/premier.svg') no-repeat;
+}
+
+#software5{
+    background: url('../../../images/indesign.svg') no-repeat;
+}
