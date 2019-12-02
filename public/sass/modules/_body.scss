@@ -46,30 +46,44 @@
 #software1{
     background: url('../../../images/photoshop.svg') no-repeat;
 }
+#software1{&:hover{transform: rotate(-20deg);}}
 
 #software2{
     background: url('../../../images/illustrator.svg') no-repeat;
 }
+#software2{&:hover{transform: rotate(-20deg);}}
 
 #software3{
     background: url('../../../images/after-effects.svg') no-repeat;
 }
+#software3{&:hover{transform: rotate(-20deg);}}
 
 #software4{
     background: url('../../../images/premier.svg') no-repeat;
 }
+#software4{&:hover{transform: rotate(-20deg);}}
 
 #software5{
     background: url('../../../images/indesign.svg') no-repeat;
-}
+}#software5{&:hover{transform: rotate(-20deg);}}
 
 #demoReel{
     display: flex;
+    flex-direction: column;
     width: 100%;
     background-color: $main-color;
+    padding-bottom: 50px;
     video{
         margin: 0 auto;
         width: 300px;
+    }
+    h3{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    h4{
+        color: $alternate-bg;
+        padding: 0 30px 20px 30px;
     }
 
 }
