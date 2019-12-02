@@ -1,22 +1,40 @@
-#mainHeader{
-    /*background: $header-image;*/
-    height: 300px;
 
-}
-#logoCon
+.header{
+     background: url('../../images/hero-image-mobile.jpg') fixed no-repeat;
+     height: 300px;
+     width: 100%;
+    h2{
+        font-size: 25px;
+        margin-top: 35px;
+        margin-left: -235px;
+    }
+    h3{
+        font-size: 25px;
+        margin-left: -150px;
+    }
+
+    #logoCon
 {
-    margin-top: 30px;
+    
     img{
-        width: 300px;
+        width: 150px;
+        padding-top: 10px;
     }
 
 margin-left: 10px;
 }
+}
 
-#hero{
-    h2{
-        font-size: 40px;
-        margin-top: -100px;
-        padding-bottom: 50px;
+@media screen and (min-width: 350px) {
+    .header{
+        background: url("../../images/hero-image-tablet.jpg") fixed no-repeat;
+        height: 370px;
+    }
+}
+
+@media screen and (min-width: 477px) {
+    .header{
+        background: url("../../images/hero-image-bigTablet.jpg") fixed no-repeat;
+        height: 450px;
     }
 }

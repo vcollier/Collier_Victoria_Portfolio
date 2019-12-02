@@ -1,25 +1,25 @@
 #inspiration{
-    margin-top: 20px;
     background: $alternate-bg;
+    margin-top: -105px;
 
     h2{
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 20px;
     }
 
     p{
         color: $alternate-text;
-        font-size: 15px;
+        font-size: 10px;
         padding: 10px 45px 20px 45px;
 
     }
 }
 
 #experience{
-    background: rgba($color: #aaaaaa, $alpha: 0.5);
+    background: rgba($color: #61b8af, $alpha: 1.0);
 
     h2{
-        font-size: 25px;
+        font-size: 20px;
         padding-top: 20px;
     }
 
@@ -30,6 +30,11 @@
             margin: 20px 20px 20px 20px;
 
         }
+}
+
+#mePic{
+    width: 70%;
+    margin: 0 auto;
 }
 
 #icons{
@@ -56,4 +61,15 @@
 
 #software5{
     background: url('../../../images/indesign.svg') no-repeat;
+}
+
+#demoReel{
+    display: flex;
+    width: 100%;
+    background-color: $main-color;
+    video{
+        margin: 0 auto;
+        width: 300px;
+    }
+
 }

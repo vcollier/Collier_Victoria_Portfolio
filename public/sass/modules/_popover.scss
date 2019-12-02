@@ -1,18 +1,22 @@
 .popover{
     display: none;
     position: absolute;
-    background: rgba($color: rgb(198, 214, 221), $alpha: 1.0);
+    background: rgba($color: $alternate-bg, $alpha: 1.0);
     width: 300px;
+    height: 500px;
     margin-top: -200px;
     
 
     .see-more{
+        display: flex;
+        flex-direction: column;
         width: 300px;
         height: 300px;
     }
     
     .graphic{
-        width: 30%;
+        margin-left: 100px;
+        width: 80%;
     }
 
     h5{
@@ -25,9 +29,51 @@
 
     .desc{
         color: white;
+        font-size: 10px;
+        padding: 20px;
     }
     
 }
 .show-popover { 
     display: block;
+  }
+
+  @media screen and (min-width: 400px){
+
+    .popover{
+        margin-left: -50px;
+        width: 400px;
+        height: 600px;
+        margin-top: -200px;
+
+        .graphic{
+            margin-top: 40px;
+            margin-left: 130px;
+        }
+
+        .video{
+            margin-left: 50px;
+
+        }
+}
+  }
+
+  @media screen and (min-width: 600px){
+
+    .popover{
+        margin-left: -150px;
+        width: 600px;
+        height: 600px;
+        margin-top: -200px;
+
+        .graphic{
+            margin-top: 40px;
+            margin-left: 130px;
+        }
+
+        .video{
+            margin-left: 50px;
+
+        }
+}
   }

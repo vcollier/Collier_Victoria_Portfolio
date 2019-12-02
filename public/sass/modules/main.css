@@ -1,28 +1,48 @@
-#mainHeader {
-  /*background: $header-image;*/
+.header {
+  background: url("../../images/hero-image-mobile.jpg") fixed no-repeat;
   height: 300px;
+  width: 100%;
 }
 
-#logoCon {
-  margin-top: 30px;
+.header h2 {
+  font-size: 25px;
+  margin-top: 35px;
+  margin-left: -235px;
+}
+
+.header h3 {
+  font-size: 25px;
+  margin-left: -150px;
+}
+
+.header #logoCon {
   margin-left: 10px;
 }
 
-#logoCon img {
-  width: 300px;
+.header #logoCon img {
+  width: 150px;
+  padding-top: 10px;
 }
 
-#hero h2 {
-  font-size: 40px;
-  margin-top: -100px;
-  padding-bottom: 50px;
+@media screen and (min-width: 350px) {
+  .header {
+    background: url("../../images/hero-image-tablet.jpg") fixed no-repeat;
+    height: 370px;
+  }
+}
+
+@media screen and (min-width: 477px) {
+  .header {
+    background: url("../../images/hero-image-bigTablet.jpg") fixed no-repeat;
+    height: 450px;
+  }
 }
 
 .toggleNav {
   right: 0;
   float: right;
   width: 25px;
-  padding: 0px 50px 0px 0px;
+  padding: 10px 20px 0px 0px;
 }
 
 #menuButton {
@@ -43,10 +63,6 @@
   padding: 10px 50px 10px 50px;
 }
 
-#toggleList li:hover {
-  padding: 10px 50px 10px 50px;
-}
-
 #toggleList a {
   text-decoration: none;
   color: white;
@@ -57,16 +73,12 @@
   font-size: 30px;
   margin-right: 0px;
   color: black;
-  background-color: gray;
+  background: rgba(16, 81, 90, 0.8);
   width: 100%;
 }
 
 #mainHeader {
   height: 300px;
-}
-
-#logoCon {
-  margin-left: 10px;
 }
 
 #logoCon img {
@@ -87,27 +99,27 @@
 }
 
 #inspiration {
-  margin-top: 20px;
-  background: #242323;
+  background: #407b7d;
+  margin-top: -105px;
 }
 
 #inspiration h2 {
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
 }
 
 #inspiration p {
   color: #aaaaaa;
-  font-size: 15px;
+  font-size: 10px;
   padding: 10px 45px 20px 45px;
 }
 
 #experience {
-  background: rgba(170, 170, 170, 0.5);
+  background: #61b8af;
 }
 
 #experience h2 {
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
 }
 
@@ -115,6 +127,11 @@
   width: 50px;
   height: 50px;
   margin: 20px 20px 20px 20px;
+}
+
+#mePic {
+  width: 70%;
+  margin: 0 auto;
 }
 
 #icons {
@@ -150,7 +167,21 @@
   background: url("../../../images/indesign.svg") no-repeat;
 }
 
-#beer1 {
+#demoReel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #a3dcd3;
+}
+
+#demoReel video {
+  margin: 0 auto;
+  width: 300px;
+}
+
+#projects {
+  padding-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,31 +189,29 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 30px;
-  background: rgba(170, 170, 170, 0.5);
+  background: #a3dcd3;
 }
 
-#beer1 h2 {
-  font-size: 25px;
+#projects h2 {
+  font-size: 20px;
+  padding: 15px;
 }
 
-#beer1 div {
+#projects .proCon {
+  margin-top: -120px;
+}
+
+#projects div {
   margin: 0 auto;
-  margin-top: 30px;
 }
 
-#beer1 div p {
+#projects div p {
   color: #aaaaaa;
   letter-spacing: 2px;
   padding-top: 80px;
 }
 
-#beer1 div h2 {
-  font-size: 25px;
-  padding: 15px;
-}
-
-#beer1 div a {
+#projects div a {
   border: 1px solid;
   width: 100px;
   padding: 5px;
@@ -192,69 +221,80 @@
   margin: 0 auto;
 }
 
-#beer1 div a:hover {
+#projects div a:hover {
   background: white;
   color: #41797B;
 }
 
-#beer1 #teched {
+#projects #teched {
   background: url("../../../images/tech-vid.png");
 }
 
-#beer1 #climatevid {
+#projects #climatevid {
   background: url("../../../images/climate-vid.png");
 }
 
-#beer1 #winead {
+#projects #winead {
   background: url("../../../images/ad-wine.png");
 }
 
-#beer1 #climateinfo {
+#projects #climateinfo {
   background: url("../../../images/climate-info.png");
 }
 
-#beer1 #cricketinfo {
+#projects #cricketinfo {
   background: url("../../../images/cricket-info.png");
 }
 
-#beer1 #laurabrand {
+#projects #laurabrand {
   background: url("../../../images/laura-brand.png");
 }
 
-#beer1 #england {
+#projects #england {
   background: url("../../../images/series-pic.png");
 }
 
-#beer1 #drivencell {
+#projects #drivencell {
   background: url("../../../images/logo-organ.png");
 }
 
-#beer1 .see-more {
+#projects .see-more {
   width: 300px;
   height: 300px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#beer1 .graphic {
+#projects .graphic {
   width: 30%;
 }
 
 #about {
-  background: rgba(170, 170, 170, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a3dcd3;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #about h2 {
-  font-size: 25px;
+  font-size: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 #about p {
+  font-size: 10px;
   padding: 0 30px 0 30px;
 }
 
 #mainFooter {
-  background: #242323;
+  background: #407b7d;
 }
 
 #mainFooter #footerNav ul {
@@ -274,24 +314,33 @@
 }
 
 #mainFooter #footerLogo img {
-  width: 300px;
+  width: 200px;
 }
 
 .popover {
   display: none;
   position: absolute;
-  background: #c6d6dd;
+  background: #407b7d;
   width: 300px;
+  height: 500px;
   margin-top: -200px;
 }
 
 .popover .see-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 300px;
   height: 300px;
 }
 
 .popover .graphic {
-  width: 30%;
+  margin-left: 100px;
+  width: 80%;
 }
 
 .popover h5 {
@@ -304,18 +353,103 @@
 
 .popover .desc {
   color: white;
+  font-size: 10px;
+  padding: 20px;
 }
 
 .show-popover {
   display: block;
 }
 
+@media screen and (min-width: 400px) {
+  .popover {
+    margin-left: -50px;
+    width: 400px;
+    height: 600px;
+    margin-top: -200px;
+  }
+  .popover .graphic {
+    margin-top: 40px;
+    margin-left: 130px;
+  }
+  .popover .video {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .popover {
+    margin-left: -150px;
+    width: 600px;
+    height: 600px;
+    margin-top: -200px;
+  }
+  .popover .graphic {
+    margin-top: 40px;
+    margin-left: 130px;
+  }
+  .popover .video {
+    margin-left: 50px;
+  }
+}
+
+#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #a3dcd3;
+  padding-bottom: 30px;
+}
+
+#contact h3 {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact form {
+  margin: 0 auto;
+}
+
+#contact input {
+  color: #407b7d;
+  background: #a3dcd3;
+  border: none;
+  border-bottom: 2px solid #407b7d;
+  width: 200px;
+}
+
+#contact textarea {
+  color: #407b7d;
+  margin-top: 20px;
+  background: #a3dcd3;
+  border: 2px solid #407b7d;
+  width: 200px;
+  height: 100px;
+}
+
+#contact #submit {
+  margin: 0 auto;
+  width: 80px;
+  height: 40px;
+  color: #407b7d;
+  border: solid 2px #407b7d;
+  background: #a3dcd3;
+}
+
 .hidden {
   display: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: url("../../../images/bg-desk.png") fixed no-repeat;
   padding: 0;
 }
 

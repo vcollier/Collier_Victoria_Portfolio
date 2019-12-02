@@ -6,13 +6,17 @@
 @import "_about.scss";
 @import "_footer.scss";
 @import "_popover.scss";
+@import "_contact.scss";
 
 .hidden{
     display: none;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
-    background: url('../../../images/bg-desk.png') fixed no-repeat;
     padding: 0;
 }
 

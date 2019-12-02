@@ -1,0 +1,40 @@
+#contact{
+    display: flex;
+    flex-direction: column;
+    background-color:  #a3dcd3;
+    padding-bottom: 30px;
+    h3{
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+
+    input{
+        color: $alternate-bg;
+        background: $main-color;
+        border: none;
+        border-bottom: 2px solid $alternate-bg;
+        width: 200px;
+    }
+    textarea{
+        color: $alternate-bg;
+        margin-top: 20px;
+        background: #a3dcd3;
+        border: 2px solid $alternate-bg;
+        width: 200px;
+        height: 100px;
+    }
+
+    #submit{
+        margin: 0 auto;
+        width: 80px;
+        height: 40px;
+        color: $alternate-bg;
+        border: solid 2px $alternate-bg;
+        background: $main-color;
+    }
+}

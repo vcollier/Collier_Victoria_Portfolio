@@ -2,7 +2,7 @@
   right: 0;
   float: right;
   width: 25px;
-  padding: 0px 50px 0px 0px;
+  padding: 10px 20px 0px 0px;
 }
 
 
@@ -24,10 +24,6 @@
   padding: 10px 50px 10px 50px;
 }
 
-#toggleList li:hover {
-  padding: 10px 50px 10px 50px;
-}
-
 #toggleList a{
   text-decoration: none;
   color: white;
@@ -38,16 +34,12 @@
   font-size: 30px;
   margin-right: 0px;
   color: black;
-  background-color:gray;
+  background: rgba($color: #10515a, $alpha: 0.8);
   width: 100%;
 }
 
 #mainHeader {
   height: 300px;
-}
-
-#logoCon {
-  margin-left: 10px;
 }
 
 #logoCon img {
