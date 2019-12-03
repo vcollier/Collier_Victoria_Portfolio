@@ -6,6 +6,7 @@
     function buildPopover(tbl_projects, el) {
         popOver.querySelector(".type").textContent = tbl_projects.Type;
         popOver.querySelector(".name").textContent = tbl_projects.Name;
+        popOver.querySelector(".col").textContent = tbl_projects.Collaborators;
         popOver.querySelector(".desc").textContent = tbl_projects.Description;
         popOver.querySelector(".graphic").src = `images/${tbl_projects.Image}`;
         popOver.querySelector(".video").src = `video/${tbl_projects.Video}`;

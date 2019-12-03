@@ -18,7 +18,7 @@
 <body>
     <h1 class="hidden">Victoria Collier</h1>
     <main>
-      <a href="home" class="hidden"></a>
+      <a href="index" class="hidden"></a>
         <header class="header">
         <!--<nav id="mainNav">
             <h2 class="hidden">Main Navigation</h2>-->
@@ -27,19 +27,23 @@
         </div>
         <nav id="toggleList">
             <ul>
-                <li><a href="#index">Home</a></li>
+                <li><a href="#index" onClick="window.location.reload();">Home</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
    
         </nav>
+
           <div id="logoCon">
             <img src="images/Logo.png">
                   </div>
+                  <div id="header-info">
+                  <div id="girl-img"></div>
 
                   <h2>Hey.</h2>
                   <h3> I'm Victoria</h3>
+                </div>
                 </header>
 
                   <section id="inspiration">
@@ -74,10 +78,11 @@
             <a href="portfolio" class="hidden"></a>
                 <h2>PROJECTS</h2>
                 <h4>Here's some information on individual and group projects I have done.</h4>
+                
           <div class="proCon">
             <object data="" type="image/svg+xml" class="svg-graphic" id="bottle"></object>
             <div id="buttons">
-           
+           <div id="row1">
               <div class="see-more" id="teched" data-target="1">
                   <p>Video</p>
                   <h2>TECH EDUCATION</h2>
@@ -95,7 +100,9 @@
                 <h2>SLIPKNOT WINE</h2>
                 <a data-target="3">View Project</a>
             </div>
+          </div>
 
+          <div id="row2">
             <div class="see-more" id="climateinfo" data-target="4">
                 <p>Infographic</p>
                 <h2>CARBON EMITTORS</h2>
@@ -113,7 +120,9 @@
                 <h2>THE MINDFUL ORGANIZER</h2>
                 <a data-target="6">View Project</a>
             </div>
+          </div>
 
+          <div id="row3">
             <div class="see-more" id="england" data-target="7">
                 <p>Photo Series</p>
                 <h2>LIFE IN ENGLAND</h2>
@@ -127,6 +136,7 @@
             </div>
           </div>
           </div>
+          </div>
         </section>
 
         <section id="beer2">
@@ -134,17 +144,20 @@
 
         <section id="beer3">
         </section>
+        <section id="popCon">
 
         <article class="popover">
             <div class="closeButton"><button onClick="window.location.reload();">X</button></div>
           <div>
             <h5 class="type"></h5>
           <h4 class="name"></h4>
+          <h3 class="col"></h3>
           <div class="desc"></div>
         </div>
           <img class="graphic" src="" alt="">
-          <embed class="video" src="" autoplay=false ></embed>
+          <video class="video" src="" autoplay=false controls width="300px">
         </article>
+      </section>
 
         <div id="demoReel">
           <h3>DEMO REEL</h3>
@@ -190,6 +203,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <div class="social-media">
+             <a href="https://www.instagram.com/toriacollier_/"> <img src="../../images/instagram.png" class="icons" alt=""> </a>
+              <a href="https://www.linkedin.com/in/victoria-collier-292b8614b/"><img src="../../images/linkedin.png" class="icons" alt=""></a>
+             <a href="https://www.facebook.com/victoria.collier.9083"> <img src="../../images/facebook.png" class="icons" alt=""> </a>
+            </div>
     </footer>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>

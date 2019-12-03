@@ -4,10 +4,17 @@
   width: 100%;
 }
 
-.header h2 {
+.header #header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.header #header-info h2 {
   font-size: 25px;
-  margin-top: 35px;
-  margin-left: -235px;
+  margin-left: -255px;
   -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -46,9 +53,10 @@
   }
 }
 
-.header h3 {
+.header #header-info h3 {
   font-size: 25px;
-  margin-left: -150px;
+  margin-top: 30px;
+  margin-left: -50px;
   -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
   animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -85,6 +93,17 @@
     transform: translateZ(0);
     opacity: 1;
   }
+}
+
+.header #header-info #girl-img {
+  margin-top: -20px;
+  width: 80px;
+  height: 120px;
+  background: url("../../images/me-anim.svg") no-repeat;
+}
+
+.header #header-info #girl-img:hover {
+  background: url("../../images/me-anim-wink.svg") no-repeat;
 }
 
 .header #logoCon {
@@ -101,12 +120,58 @@
     background: url("../../images/hero-image-tablet.jpg") fixed no-repeat;
     height: 370px;
   }
+  .header #header-info {
+    margin-top: 50px;
+  }
+  .header #header-info #girl-img {
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .header #header-info h2 {
+    margin-left: -330px;
+    font-size: 40px;
+  }
+  .header #header-info h3 {
+    font-size: 40px;
+    padding-top: 20px;
+    margin-left: -80px;
+  }
 }
 
-@media screen and (min-width: 477px) {
+@media screen and (min-width: 475px) {
   .header {
     background: url("../../images/hero-image-bigTablet.jpg") fixed no-repeat;
     height: 450px;
+  }
+  .header #header-info {
+    margin-top: 30px;
+  }
+  .header #header-info #girl-img {
+    width: 150px;
+    height: 250px;
+    margin-left: 70px;
+    margin-top: 20px;
+  }
+  .header #header-info h2 {
+    padding-top: 50px;
+    margin-left: -400px;
+    font-size: 40px;
+  }
+  .header #header-info h3 {
+    font-size: 40px;
+    padding-top: 70px;
+    margin-left: -80px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .header {
+    background: url("../../images/hero-image-desk.png") fixed no-repeat;
+    height: 850px;
+  }
+  .header #logoCon img {
+    width: 250px;
+    padding-top: 10px;
   }
 }
 
@@ -115,6 +180,8 @@
   float: right;
   width: 25px;
   padding: 10px 20px 0px 0px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 #menuButton {
@@ -132,7 +199,28 @@
 }
 
 #toggleList li {
-  padding: 10px 50px 10px 50px;
+  margin-left: -40px;
+  padding: 0px 0px 0px 0px;
+  color: #FFF;
+  border: 2px solid white;
+  border-top: 0;
+  border-radius: 0px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 0 0 0 #407b7d;
+          box-shadow: inset 0 0 0 0 #407b7d;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+#toggleList li:first-child {
+  border-top: 2px solid white;
+}
+
+#toggleList li:hover {
+  -webkit-box-shadow: inset 0 45px 0 0 white;
+          box-shadow: inset 0 45px 0 0 white;
+  color: #407b7d;
+  border: solid 2px white;
 }
 
 #toggleList a {
@@ -140,13 +228,16 @@
   color: white;
 }
 
+#toggleList a:hover {
+  color: #407b7d;
+}
+
 #toggleList.active {
   display: block;
   font-size: 30px;
-  margin-right: 0px;
-  color: black;
-  background: rgba(16, 81, 90, 0.8);
+  background: #407b7d;
   width: 100%;
+  height: 200px;
 }
 
 #mainHeader {
@@ -170,7 +261,28 @@
   transition: all 600ms ease;
 }
 
+@media screen and (min-width: 350px) {
+  #toggleList li {
+    padding: 10px 50px 10px 50px;
+  }
+  #toggleList.active {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  #mainNav button {
+    width: 50px;
+    height: 50px;
+  }
+  #menuButton {
+    width: 55px;
+    margin-left: -25px;
+  }
+}
+
 #inspiration {
+  position: relative;
   background: #407b7d;
   margin-top: -105px;
 }
@@ -310,7 +422,7 @@
 }
 
 #projects h4 {
-  color: #407b7d;
+  color: white;
   padding: 0 30px 0 30px;
 }
 
@@ -404,6 +516,57 @@
   width: 30%;
 }
 
+@media screen and (min-width: 900px) {
+  #projects .see-more {
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #projects div h2 {
+    text-align: right;
+    margin-right: 60px;
+  }
+  #projects div p {
+    text-align: right;
+    margin-right: 135px;
+  }
+  #projects div a {
+    border: 1px solid;
+    width: 100px;
+    padding: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+    margin-right: 100px;
+  }
+  #projects #teched {
+    background: url("../../../images/tech-vid-desk.jpg");
+  }
+  #projects #climatevid {
+    background: url("../../../images/climate-vid-desk.jpg");
+  }
+  #projects #winead {
+    background: url("../../../images/ad-wine-desk.jpg");
+  }
+  #projects #climateinfo {
+    background: url("../../../images/climate-info-desk.jpg");
+  }
+  #projects #cricketinfo {
+    background: url("../../../images/cricket-info-desk.jpg");
+  }
+  #projects #laurabrand {
+    background: url("../../../images/laura-brand-desk.jpg");
+  }
+  #projects #england {
+    background: url("../../../images/series-pic-desk.jpg");
+  }
+  #projects #drivencell {
+    background: url("../../../images/logo-organ-desk.jpg");
+  }
+}
+
 #about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -412,6 +575,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   background-color: #a3dcd3;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -431,6 +595,26 @@
 
 #mainFooter {
   background: #407b7d;
+}
+
+#mainFooter .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#mainFooter .social-media a {
+  margin: 0 auto;
+}
+
+#mainFooter .social-media a .icons {
+  margin: 0 auto;
+  width: 50px;
+  padding-bottom: 30px;
 }
 
 #mainFooter #footerNav ul {
@@ -458,7 +642,7 @@
   position: absolute;
   background: #407b7d;
   width: 300px;
-  height: 500px;
+  height: 550px;
   margin-top: -200px;
 }
 
@@ -524,11 +708,10 @@
   .popover {
     margin-left: -50px;
     width: 400px;
-    height: 600px;
+    height: 650px;
     margin-top: -200px;
   }
   .popover .graphic {
-    margin-top: 40px;
     margin-left: 130px;
   }
   .popover .video {
@@ -540,8 +723,46 @@
   .popover {
     margin-left: -150px;
     width: 600px;
-    height: 600px;
+    height: 650px;
     margin-top: -200px;
+  }
+  .popover .graphic {
+    margin-left: 130px;
+  }
+  .popover .video {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .popover {
+    margin-left: -200px;
+    width: 700px;
+    height: 900px;
+    margin-top: -200px;
+  }
+  .popover .graphic {
+    margin-top: 40px;
+    margin-left: 130px;
+  }
+  .popover .video {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .popover {
+    margin-left: -50px;
+    margin-top: -280px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .popover {
+    margin-left: -150px;
+    width: 900px;
+    height: 900px;
+    margin-top: -280px;
   }
   .popover .graphic {
     margin-top: 40px;
@@ -578,7 +799,7 @@
 
 #contact form {
   margin: 0 auto;
-  padding: 10px 100px 80px 100px;
+  padding: 10px 0px 80px 0px;
 }
 
 #contact input {
@@ -605,6 +826,7 @@
   height: 40px;
   color: #407b7d;
   border: solid 2px #407b7d;
+  cursor: pointer;
   background: #a3dcd3;
   -webkit-box-shadow: inset 0 0 0 0 #407b7d;
           box-shadow: inset 0 0 0 0 #407b7d;

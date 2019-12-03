@@ -6,11 +6,10 @@
     background: rgba($color: #a3dcd3, $alpha: 1.0);
     h2{
       font-size: 20px;
-      padding: 15px;
-      
+      padding: 15px;  
   }
   h4{
-    color: $alternate-bg;
+    color: white;
     padding: 0 30px 0 30px;
     
   }
@@ -103,4 +102,72 @@
     .graphic{
         width: 30%;
     }
+}
+
+@media screen and (min-width: 900px) {
+
+  #projects{
+
+  .see-more{
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div{
+
+  h2{
+    text-align: right;
+    margin-right: 60px;
+  }
+
+  p{
+    text-align: right;
+    margin-right: 135px;
+  }
+  a{
+    border: 1px solid;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    margin-top: 50px;
+    margin-right: 100px;
+    
+  }
+  
+}
+
+#teched{
+  background: url('../../../images/tech-vid-desk.jpg');
+}
+
+#climatevid{
+  background: url('../../../images/climate-vid-desk.jpg');
+}
+
+#winead{
+  background: url('../../../images/ad-wine-desk.jpg');
+}
+
+#climateinfo{
+  background: url('../../../images/climate-info-desk.jpg');
+}
+
+#cricketinfo{
+  background: url('../../../images/cricket-info-desk.jpg');
+}
+
+#laurabrand{
+  background: url('../../../images/laura-brand-desk.jpg');
+}
+
+#england{
+  background: url('../../../images/series-pic-desk.jpg');
+}
+
+#drivencell{
+  background: url('../../../images/logo-organ-desk.jpg');
+}
+  }
 }

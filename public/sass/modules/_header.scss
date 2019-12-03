@@ -1,12 +1,16 @@
 
 .header{
+
      background: url('../../images/hero-image-mobile.jpg') fixed no-repeat;
      height: 300px;
      width: 100%;
+     #header-info{
+       display: flex;
+       margin-left: 200px;
+       margin-top: 30px;
     h2{
         font-size: 25px;
-        margin-top: 35px;
-        margin-left: -235px;
+        margin-left: -255px;
         -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
@@ -45,7 +49,8 @@
       }
     h3{
         font-size: 25px;
-        margin-left: -150px;
+        margin-top: 30px;
+        margin-left: -50px;
         -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     }
@@ -83,8 +88,19 @@
         }
       }
 
-    #logoCon
-{
+      #girl-img{
+        margin-top: -20px;
+        width: 80px;
+        height: 120px;
+        background: url("../../images/me-anim.svg") no-repeat;
+      }
+
+      #girl-img:hover{
+        background: url("../../images/me-anim-wink.svg") no-repeat;
+      }
+    }
+
+    #logoCon{
     
     img{
         width: 150px;
@@ -99,12 +115,71 @@ margin-left: 10px;
     .header{
         background: url("../../images/hero-image-tablet.jpg") fixed no-repeat;
         height: 370px;
+
+        #header-info{
+          margin-top: 50px;
+
+          #girl-img{
+            margin-left: 70px;
+            margin-top: 20px;
+          }
+
+          h2{
+            margin-left: -330px;
+            font-size: 40px;
+          }
+
+          h3{
+            font-size: 40px;
+            padding-top: 20px;
+            margin-left: -80px;
+          }
+        }
     }
 }
 
-@media screen and (min-width: 477px) {
+@media screen and (min-width: 475px) {
     .header{
         background: url("../../images/hero-image-bigTablet.jpg") fixed no-repeat;
         height: 450px;
+
+        #header-info{
+          margin-top: 30px;
+
+          #girl-img{
+            width: 150px;
+            height: 250px;
+            margin-left: 70px;
+            margin-top: 20px;
+          }
+
+          h2{
+            padding-top: 50px;
+            margin-left: -400px;
+            font-size: 40px;
+          }
+
+          h3{
+            font-size: 40px;
+            padding-top: 70px;
+            margin-left: -80px;
+          }
+        }
     }
+}
+
+@media screen and (min-width: 625px) {
+  .header{
+    background: url("../../images/hero-image-desk.png") fixed no-repeat;
+    height: 850px;
+
+    #logoCon{
+    
+      img{
+          width: 250px;
+          padding-top: 10px;
+      }
+    }
+  }
+
 }
