@@ -16,3 +16,22 @@
         padding: 0 30px 0 30px;
     }
 }
+
+@media screen and (min-width: 625px){
+    #about{
+        display: flex;
+        h2{
+            font-size: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        p{
+            margin: 0 auto;
+            text-align: left;
+            color: $alternate-bg;
+            max-width: 650px;
+            font-size: 20px;
+            padding: 0 30px 30px 30px;
+        }
+    }
+}

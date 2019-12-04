@@ -1,6 +1,10 @@
 
 .header{
 
+  #thought{
+    display: none;
+  }
+
      background: url('../../images/hero-image-mobile.jpg') fixed no-repeat;
      height: 300px;
      width: 100%;
@@ -173,11 +177,106 @@ margin-left: 10px;
     background: url("../../images/hero-image-desk.png") fixed no-repeat;
     height: 850px;
 
+    #header-info{
+      margin-top: 30px;
+
+      #girl-img{
+        width: 250px;
+        height: 350px;
+        margin-left: 40%;
+        margin-top: 150px;
+      }
+
+      h2{
+        padding-top: 150px;
+        margin-left: -600px;
+        font-size: 60px;
+      }
+
+      h3{
+        font-size: 60px;
+        padding-top: 190px;
+        margin-left: -120px;
+      }
+    }
+
     #logoCon{
     
       img{
           width: 250px;
           padding-top: 10px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 760px){
+  .header{
+
+    #header-info{
+  #girl-img{
+        margin-left: 40%;
+        margin-top: 150px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 960px){
+  .header{
+
+    #header-info{
+  #girl-img{
+        margin-left: 40%;
+        margin-top: 150px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .header{
+    #header-info{
+      h2{
+        padding-top: 180px;
+        margin-left: -730px;
+        font-size: 80px;
+      }
+
+      h3{
+        font-size: 80px;
+        padding-top: 240px;
+        margin-left: -160px;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  .header{
+
+    #header-info{
+  #girl-img{
+    width: 400px;
+    height: 500px;
+        margin-left: 50%;
+        margin-top: 80px;
+      }
+
+      h2{
+        padding-top: 180px;
+        margin-left: -1000px;
+        font-size: 80px;
+      }
+
+      h3{
+        font-size: 80px;
+        padding-top: 240px;
+        margin-left: -160px;
       }
     }
   }

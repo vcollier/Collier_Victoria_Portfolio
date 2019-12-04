@@ -16,7 +16,51 @@
         el.appendChild(popOver);
        }
 
-    // run the fetch API and get the DB data
+       (() => {
+    console.log('fired');
+
+    const form = document.querySelector('form'), submit = form.querySelector('.submit-button');
+
+    function handleMail(event) {
+        event.preventDefault();
+
+        let formdata = new FormData(form),
+            maildata = {};
+
+        for (let [key, value] of formdata.entries()) {
+            maildata[key] = value;
+        }
+
+        let url = `/mail`;
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-type': 'application/json'
+            },
+
+            body: JSON.stringify(maildata)
+        })
+            .then(res => res.json())
+            .then(data => {
+      
+                console.log(data);
+
+                if (data.response.includes("OK")) {
+                
+                    form.reset();
+                    alert("email was sent!");
+                }
+            }) 
+            .catch((err) => console.log(err));
+
+        console.log('tried sending mail');
+    }
+
+    form.addEventListener('submit', handleMail)
+})()
+
     function fetchData() {
         let targetEl = this,
             url = `/svgdata/${this.dataset.target}`;

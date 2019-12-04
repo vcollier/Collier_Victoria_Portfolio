@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
-var nodemailer = require('nodemailer');
+var auth = require('../config/mailcreds');
+var mailer = require('nodemailer');
 
 const sql = require('../utils/sql');
 
@@ -11,27 +12,40 @@ router.get('/', function(req, res, next) {
   res.sendFile((path.join(__dirname, "../views/index.html")));
 });
 
-var transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-         user: 'vcollier09@gmail.com',
-         pass: 'Ashby123'
-     }
- });
+const transporter = mailer.createTransport({
+	service: 'gmail',
+	auth: {
+		user: auth.user,
+		pass: auth.pass
+	}
+});
 
- const mailOptions = {
-  from: 'sender@email.com', // sender address
-  to: 'to@email.com', // list of receivers
-  subject: 'Subject of your email', // Subject line
-  html: '<p>Your html here</p>'// plain text body
+router.get('/', function (req, res, next) {
+	res.render('index', { title: 'Express' });
+});
+
+router.post('/mail', (req, res) => {
+	console.log('hit mail route');
+	console.log('body: ', req.body);
+
+const mailOptions = {
+  from: req.body.usermail,
+  to: auth.user,
+  replyTo: req.body.usermail,
+  subject: `From portfolio site: Subject = ${req.body.subject || 'none'}`,
+  text: req.body.message
 };
 
 transporter.sendMail(mailOptions, function (err, info) {
-  if(err)
-    console.log(err)
-  else
-    console.log(info);
+  if (err) {
+    console.log("failed... ", err);
+    res.json(err);
+  } else {
+    console.log("success! ", info);
+    res.json(info);
+  }
 });
+})
 
 router.get('/svgdata/:target', (req, res) => {
 

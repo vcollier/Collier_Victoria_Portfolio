@@ -8,7 +8,7 @@
     $email = '';
     $subject = '';
     $message = '';
-    $recipient = 'v.collier@hotmail.com';
+    $recipient = 'victoriacollierdd@gmail.com';
 
     //some validations
     if(isset($_POST['name'])){

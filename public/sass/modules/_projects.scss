@@ -104,6 +104,24 @@
     }
 }
 
+@media screen and (min-width: 625px){
+  #projects{
+    padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      background: rgba($color: #a3dcd3, $alpha: 1.0);
+      #proTitle{
+        font-size: 40px;
+        padding: 15px;  
+    }
+    h4{
+      color: white;
+      font-size: 20px;
+      
+    }
+  }
+}
+
 @media screen and (min-width: 900px) {
 
   #projects{

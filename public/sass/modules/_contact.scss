@@ -3,6 +3,8 @@
     flex-direction: column;
     background: rgba($color: rgb(192, 231, 229), $alpha: 0.3);
     padding-bottom: 30px;
+
+    
     h3{
         font-size: 20px;
         padding-top: 20px;
@@ -17,6 +19,27 @@
     form{
         margin: 0 auto;
         padding: 10px 0px 80px 0px;
+
+        .submit-button{
+            margin-left: 35%;
+            margin-top: 30px;
+            width: 80px;
+            height: 40px;
+            color: $alternate-bg;
+            border: solid 2px $alternate-bg;
+            cursor: pointer;
+            background: $main-color;
+            box-shadow: inset 0 0 0 0 $alternate-bg;
+      -webkit-transition: ease-out 0.4s;
+      -moz-transition: ease-out 0.4s;
+      transition: ease-out 0.4s;
+        }
+    
+        .submit-button:hover {
+            box-shadow: inset 0 50px 0 0 white;
+            color: $alternate-bg;
+            border: solid 2px white;
+          }
     }
 
     input{
@@ -35,24 +58,54 @@
         height: 100px;
     }
 
-    #submit{
-        margin: 0 auto;
-        margin-top: -70px;
-        width: 80px;
-        height: 40px;
-        color: $alternate-bg;
-        border: solid 2px $alternate-bg;
-        cursor: pointer;
-        background: $main-color;
-        box-shadow: inset 0 0 0 0 $alternate-bg;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+    
+
+    
+}
+
+
+@media screen and (min-width: 625px){
+    #contact{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: $alternate-bg;
+        }
+        h4{
+            font-size: 20px;
+            color: $alternate-bg;
+            padding: 0 30px 20px 30px;
+        }
+
+        input{
+            width: 300px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        textarea{
+            width: 300px;
+            height: 200px;
+            font-size: 20px;
+        }
+
+        .submit-button{
+            margin: 0 auto;
+            margin-top: -70px;
+            width: 150px;
+            height: 60px;
+            font-size: 20px;
+    
+        }
+        .submit-button:hover {
+            box-shadow: inset 0 60px 0 0 white;
+            color: $alternate-bg;
+            border: solid 2px white;
+          }
+
     }
 
-    #submit:hover {
-        box-shadow: inset 0 50px 0 0 white;
-        color: $alternate-bg;
-        border: solid 2px white;
-      }
 }
